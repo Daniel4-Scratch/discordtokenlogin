@@ -12,6 +12,7 @@ function login(token) {
     }, 2500);
 }
 
+
 if (pageHash == "tokenlogin"){
     try{
     var token = prompt("Enter your token");
@@ -21,4 +22,5 @@ if (pageHash == "tokenlogin"){
         alert("An error occured during the login process. Please try again.");
         console.alert("Discord Token Login Error: " + err);
     }
+
 }
