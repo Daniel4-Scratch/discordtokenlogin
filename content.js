@@ -16,7 +16,7 @@ if (pageHash == "tokenlogin"){
     try{
     var token = prompt("Enter your token");
     login(token);
-    // window.location.href = "https://discord.com/app"; not reqiuired
+    window.location.href = "https://discord.com/app";
     }catch(err){
         alert("An error occured during the login process. Please try again.");
         console.alert("Discord Token Login Error: " + err);
