@@ -1,27 +1,28 @@
 {
-    "name": "Discord Token Login",
-    "description": "login to discord with a user token",
-    "version": "0.1.0",
-    "version_name": "0.1.0",
-    "manifest_version": 3,
-    "icons": {
-      "16": "/icons/icon16.png",
-      "48": "/icons/icon48.png",
-      "128": "/icons/icon128.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "/icons/icon16.png",
-        "48": "/icons/icon48.png",
-        "128": "/icons/icon128.png"
-      }
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://discord.com/login"],
-        "js": ["content.js"]
-      }
-    ]
+  "name": "Discord Token Login",
+  "description": "login to discord with a token",
+  "version": "0.2.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "/icons/icon16.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
+  },
+  "browser_action": {
+    "default_title": "Discord Token Login",
+    "default_icon": "/icons/icon48.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/login"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "daniel4scratchhelp@gmail.com"
+    }
   }
+}
   
