@@ -1,7 +1,6 @@
 // Author: @Daniel4-scratch
 
-var pageHash = window.location.hash;
-pageHash = pageHash.replace("#", "");
+var pageHash = window.location.hash.replace("#", "");
 
 function login(token) {
     setInterval(() => {
